@@ -2,23 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 //import App from './App';
 import ImageUpload from './ImageUpload'
-import ToolKit from './ToolKit'
 import reportWebVitals from './reportWebVitals';
-import { configureStore} from '@reduxjs/toolkit'
-import {Provider} from 'react-redux'
-import userReducers from './reducers/userReducers'
-
-
-const store = configureStore({
-  reducer: userReducers
-})
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <ToolKit />
-      <ImageUpload />
-    </Provider>
+    <ImageUpload />
   </React.StrictMode>,
   document.getElementById('root')
 );

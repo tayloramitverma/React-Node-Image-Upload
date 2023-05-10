@@ -10,13 +10,11 @@ export default function List({getList}) {
 
     return (
         <div>
-            {
-                list.map(item=>{
+            {list.map(item=>{
                     return (
                         <p key={item}>{item}</p>
                     )
-                })
-            }
+            })}
         </div>
     )
 }
